@@ -18,7 +18,7 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/*****************************************gestio du menu**********************************/
+/*****************************************gestion du menu**********************************/
 .open_menu {
     float: right;
     cursor: pointer;
@@ -215,7 +215,7 @@ section h2 {
 
 .master_bloc_section {
     margin: auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -227,7 +227,7 @@ section h2 {
     flex-basis: 45%;
     height: 300px;
     margin: 10px;
-    box-shadow: 8px 8px 5px grey;
+    box-shadow: 0px 0px 10px gray;
     border-radius: 5px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -236,17 +236,17 @@ section h2 {
 .master_bloc_section div span {
     border: 1px solid white;
     padding: 5px;
-    color: white;
+    color: whitesmoke;
 }
 
 .master_bloc_section div h3 {
     font-size: 25px;
-    color: white;
+    color: whitesmoke;
     padding: 20px;
 }
 
 .master_bloc_section div h4 {
-    color: white;
+    color: whitesmoke;
 }
 
 /*****les  petits block service avec chacun son background******************/
@@ -279,7 +279,7 @@ section h2 {
 }
 
 .master_bloc_section_div_js {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), #0676d1), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #0676d1), url("images/surface-S_YOuAUMm2o-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     letter-spacing: 3px;
@@ -318,7 +318,7 @@ article h2 {
     flex-basis: 25%;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px #1b8fee;
+    box-shadow: 1px 1px 4px #1b8fee;
 }
 
 .article_bloc_temoignage_div_js {
