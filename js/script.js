@@ -20,16 +20,6 @@ for (let z = 0; z < links.length; z++) {
   });
 }
 
-/*******************les effet au survol dans lr bloc sevive************************************** */
-let bloc_service = document.querySelectorAll(".bloc_service");
-for (let y = 0; y < bloc_service.length; y++) {
-  bloc_service[y].addEventListener("mouseover", () => {
-    bloc_service[y].classList.add("master_bloc_section_div_js");
-  });
-  bloc_service[y].addEventListener("mouseout", () => {
-    bloc_service[y].classList.remove("master_bloc_section_div_js");
-  });
-}
 
 /********************************************************************************************* */
 let temoignage_client = document.querySelectorAll(".temoignage_client");

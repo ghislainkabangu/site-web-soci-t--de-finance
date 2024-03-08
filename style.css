@@ -5,17 +5,19 @@ body {
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*****************en-tête et titre principal****************************/
 header {
     flex-basis: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #1b8fee), url("images/fond.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #64a9e2), url("images/surface-S_YOuAUMm2o-unsplash.jpg");
     background-position: center;
     background-size: cover;
+    background-attachment: scroll;
     height: 500px;
     margin-bottom: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*****************************************gestion du menu**********************************/
@@ -41,7 +43,7 @@ nav {
     height: 100%;
     width: 300px;
     left: -300px;
-    background-color: rgba(141, 141, 141, 0.5);
+    background-color: rgba(141, 141, 141, 0.6);
     z-index: 1;
     transition: ease-in-out 0.5s;
 }
@@ -93,18 +95,15 @@ header h1 {
     text-align: center;
     font-size: 50px;
     color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Broadway;
     padding-top: 80px;
-    font-style: oblique;
 }
 
 header p {
     text-align: center;
     color: white;
     font-size: large;
-    font-style: italic;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lucida Handwriting;
 }
 
 .header_links {
@@ -136,6 +135,7 @@ header p {
 .banière_titre_mission {
     flex-basis: 100%;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .banière_titre_mission h4 {
@@ -144,6 +144,8 @@ header p {
 
 .banière_titre_mission h2 {
     font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 /**********************************************premier bloc après header**********************************/
@@ -154,6 +156,7 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main div {
@@ -166,6 +169,7 @@ main div {
 
 .banière_service_contenu h3 {
     color: #0676d1;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .banière_service_contenu svg {
@@ -177,11 +181,30 @@ main div {
 }
 
 .banière_service_background {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), #1b8fee), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    border-radius: 10px;
     text-align: center;
+    animation: backgrondAnim 3s alternate infinite;
+    transition: ease-in-out 0.5s;
+}
+
+@keyframes backgrondAnim {
+    form {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    to {
+        background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/surface-S_YOuAUMm2o-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        transition: 0.5s;
+    }
 }
 
 .banière_service_background h3 {
@@ -189,6 +212,7 @@ main div {
     font-size: 25px;
     position: relative;
     top: 150px;
+    font-family: Lucida Handwriting;
 }
 
 /***************************************section***********************/
@@ -211,6 +235,7 @@ section h4 {
 
 section h2 {
     font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .master_bloc_section {
@@ -224,67 +249,31 @@ section h2 {
 }
 
 .master_bloc_section div {
-    flex-basis: 45%;
-    height: 300px;
+    flex-basis: 40%;
     margin: 10px;
-    box-shadow: 0px 0px 10px gray;
     border-radius: 5px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+    background-color: white;
+    padding: 25px;
 
-.master_bloc_section div span {
-    border: 1px solid white;
-    padding: 5px;
-    color: whitesmoke;
 }
 
 .master_bloc_section div h3 {
-    font-size: 25px;
-    color: whitesmoke;
-    padding: 20px;
+    color: #0676d1;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.master_bloc_section div h4 {
-    color: whitesmoke;
+.master_bloc_section div svg {
+    width: 50px;
 }
 
-/*****les  petits block service avec chacun son background******************/
-.master_bloc_section_element1 {
-    background-image: url("images/alexander-mils-lCPhGxs7pww-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-    transition: ease-in-out 0.5s;
+.master_bloc_section div p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.master_bloc_section_element2 {
-    background-image: url("images/towfiqu-barbhuiya-nApaSgkzaxg-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-    transition: ease-in-out 0.5s;
-}
-
-.master_bloc_section_element3 {
-    background-image: url("images/campaign-creators-pypeCEaJeZY-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-    transition: ease-in-out 0.5s;
-}
-
-.master_bloc_section_element4 {
-    background-image: url("images/adeolu-eletu-E7RLgUjjazc-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-    transition: ease-in-out 0.5s;
-}
-
-.master_bloc_section_div_js {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), #0676d1), url("images/surface-S_YOuAUMm2o-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    letter-spacing: 3px;
-    transition: ease-in-out 0.5s;
-}
 
 /**********************************article contentant les blocs témoignage****************************/
 article {
@@ -300,10 +289,12 @@ h4 {
 article h4 {
     color: #0676d1;
 
+
 }
 
 article h2 {
     font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .article_bloc_temoignage {
@@ -318,7 +309,7 @@ article h2 {
     flex-basis: 25%;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 1px 1px 4px #1b8fee;
+    box-shadow: 0px 0px 4px #1b8fee;
 }
 
 .article_bloc_temoignage_div_js {
@@ -360,6 +351,7 @@ footer h4 {
 footer h2 {
     font-size: 35px;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .footer_bloc {
@@ -401,7 +393,7 @@ footer h2 {
     font-size: small;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:900px) {
     header {
         height: 400px;
     }
@@ -423,7 +415,8 @@ footer h2 {
     }
 
     .banière_service_background {
-        height: 500px;
+        height: 400px;
+        padding: 5px;
     }
 
     section {
@@ -431,17 +424,13 @@ footer h2 {
     }
 
     .master_bloc_section {
-        width: 90%;
+        width: 100%;
         padding: 0px;
         justify-content: center;
     }
 
     .master_bloc_section div {
-        height: 400px;
-        flex-basis: 90%;
-        border-radius: 10px;
-        margin: 20px;
-        box-shadow: 5px 5px 5px gray;
+        flex-basis: 85%;
     }
 
     .article_bloc_temoignage {
