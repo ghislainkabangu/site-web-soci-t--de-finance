@@ -11,7 +11,7 @@ closeMenu.addEventListener("click", () => {
   nav.classList.remove("navbarr_Js");
   openMenu.classList.remove("close_menu_js_effet");
 });
-/******************************links****************** */
+/******************************links (tous les liens)**************** */
 let links = document.querySelectorAll(".link");
 for (let z = 0; z < links.length; z++) {
   links[z].addEventListener("click", () => {
@@ -20,8 +20,7 @@ for (let z = 0; z < links.length; z++) {
   });
 }
 
-
-/********************************************************************************************* */
+/*********************************(addclass list)************************************************************ */
 let temoignage_client = document.querySelectorAll(".temoignage_client");
 for (let i = 0; i < temoignage_client.length; i++) {
   temoignage_client[i].addEventListener("mouseover", () => {
