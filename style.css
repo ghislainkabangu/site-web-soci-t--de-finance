@@ -3,31 +3,62 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /*****************en-tête et titre principal****************************/
 header {
     flex-basis: 100%;
-    height: 500px;
     margin-bottom: 50px;
-    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(rgba(0, 0, 0, 0.5), #64a9e2), url("images/surface-S_YOuAUMm2o-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
 }
 
+.navigation ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navigation ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navigation ul li a:hover {
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
 /*****************************************gestion du menu**********************************/
+
 .open_menu {
     float: right;
     cursor: pointer;
     padding: 10px;
     transition: ease 0.5s;
+    display: none;
 }
-
+.open_menu i{
+    font-size: 30px;
+}
 .open_menu:hover {
     padding: 15px;
     transition: ease 0.5s;
@@ -43,7 +74,6 @@ nav {
     height: 100%;
     width: 300px;
     left: -300px;
-    /* background-color: rgba(141, 141, 141, 0.6);*/
     background-color: #0676d1;
     z-index: 1;
     transition: ease-in-out 0.5s;
@@ -93,23 +123,21 @@ nav ul li a:hover {
 
 header h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
     color: white;
-    font-family: Broadway;
-    padding-top: 80px;
 }
 
 header p {
     text-align: center;
     color: white;
     font-size: large;
-    font-family: Lucida Handwriting;
 }
 
 .header_links {
     text-align: center;
     list-style-type: none;
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .header_links li {
@@ -130,8 +158,9 @@ header p {
     letter-spacing: 2px;
     transition: ease-in-out 0.5s;
     color: #0676d1;
+    font-weight: bold;
 }
-
+/*****************************baniere misssion******************/
 .banière_titre_mission {
     flex-basis: 100%;
     text-align: center;
@@ -140,12 +169,11 @@ header p {
 
 .banière_titre_mission h4 {
     color: #0676d1;
+    font-size: 30px;
 }
 
 .banière_titre_mission h2 {
     font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 /**********************************************premier bloc après header**********************************/
@@ -156,7 +184,6 @@ main {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 main div {
@@ -169,7 +196,6 @@ main div {
 
 .banière_service_contenu h3 {
     color: #0676d1;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .banière_service_contenu svg {
@@ -214,7 +240,6 @@ main div {
     font-size: 25px;
     position: relative;
     top: 150px;
-    font-family: Lucida Handwriting;
 }
 
 /***************************************section***********************/
@@ -238,7 +263,6 @@ section h4 {
 
 section h2 {
     font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .master_bloc_section {
@@ -256,7 +280,6 @@ section h2 {
     margin: 10px;
     border-radius: 10px;
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: white;
     padding: 25px;
     box-shadow: 0px 0px 3px gray;
@@ -264,7 +287,6 @@ section h2 {
 
 .master_bloc_section div h3 {
     color: #0676d1;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .master_bloc_section div svg {
@@ -273,7 +295,6 @@ section h2 {
 
 .master_bloc_section div p {
     text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
     color: gray;
 }
 
@@ -297,7 +318,6 @@ article h4 {
 
 article h2 {
     font-size: 35px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .article_bloc_temoignage {
@@ -357,7 +377,6 @@ footer h4 {
 footer h2 {
     font-size: 35px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .footer_bloc {
@@ -402,14 +421,16 @@ footer h2 {
 }
 
 @media screen and (max-width:900px) {
-    header {
-        height: 400px;
-    }
-
-    .header_links li {
+    .navigation {
         display: none;
     }
 
+    .open_menu {
+        display: block;
+    }
+    header h1 {
+        font-size: 70px;
+    }
     main {
         margin-top: 30px;
         padding: 10px;
