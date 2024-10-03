@@ -1,8 +1,5 @@
 body {
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     background-color: white;
     font-family: "Libre Franklin", sans-serif;
     font-optical-sizing: auto;
@@ -16,12 +13,12 @@ html {
 
 /*****************en-tête et titre principal****************************/
 header {
-    flex-basis: 100%;
+    padding: 5px;
     margin-bottom: 50px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), #64a9e2), url("images/surface-S_YOuAUMm2o-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .navigation ul {
@@ -56,9 +53,11 @@ header {
     transition: ease 0.5s;
     display: none;
 }
-.open_menu i{
+
+.open_menu i {
     font-size: 30px;
 }
+
 .open_menu:hover {
     padding: 15px;
     transition: ease 0.5s;
@@ -123,8 +122,9 @@ nav ul li a:hover {
 
 header h1 {
     text-align: center;
-    font-size: 100px;
+    font-size: 130px;
     color: white;
+
 }
 
 header p {
@@ -160,6 +160,7 @@ header p {
     color: #0676d1;
     font-weight: bold;
 }
+
 /*****************************baniere misssion******************/
 .banière_titre_mission {
     flex-basis: 100%;
@@ -170,24 +171,33 @@ header p {
 .banière_titre_mission h4 {
     color: #0676d1;
     font-size: 30px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 .banière_titre_mission h2 {
     font-size: 35px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 /**********************************************premier bloc après header**********************************/
 main {
-    flex-basis: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 20px;
+    padding: 10px;
 }
 
-main div {
-    flex-basis: 40%;
+main .banière_service_contenu,
+.banière_service_background {
+    flex-basis: 45%;
 }
 
 .banière_service_contenu {
@@ -196,6 +206,11 @@ main div {
 
 .banière_service_contenu h3 {
     color: #0676d1;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 .banière_service_contenu svg {
@@ -208,45 +223,31 @@ main div {
 
 .banière_service_background {
     border-radius: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    transition: ease-in-out 0.5s;
-    animation: backgrondAnim 5s alternate infinite;
+    box-sizing: content-box;
+
+    animation: animBckground alternate infinite 5s;
 }
 
-@keyframes backgrondAnim {
-    form {
+@keyframes animBckground {
+    from {
         background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
         background-position: center;
         background-size: cover;
-        text-align: center;
-        transition: ease-in-out 0.5s;
-        ;
+        background-attachment: fixed;
     }
 
     to {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/fond.jpeg");
+        background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/alexander-mils-lCPhGxs7pww-unsplash.jpg");
         background-position: center;
         background-size: cover;
-        text-align: center;
-        transition: ease-in-out 0.5s;
+        background-attachment: fixed;
     }
-}
-
-.banière_service_background h3 {
-    color: white;
-    font-size: 25px;
-    position: relative;
-    top: 150px;
 }
 
 /***************************************section***********************/
 section {
-    flex-basis: 100%;
     margin-top: 150px;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     background-color: rgb(241, 224, 191);
     background-color: gainsboro;
     padding: 20px;
@@ -259,55 +260,57 @@ h2 {
 
 section h4 {
     color: #0676d1;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 section h2 {
     font-size: 35px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
-.master_bloc_section {
-    margin: auto;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 100px;
+.splide__track {
+    margin-bottom: 50px;
 }
 
-.master_bloc_section div {
-    flex-basis: 40%;
-    margin: 10px;
-    border-radius: 10px;
+.splide__slide {
+    padding: 25px
+}
+
+.splide__slide h3 {
     text-align: center;
-    background-color: white;
-    padding: 25px;
-    box-shadow: 0px 0px 3px gray;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth"500;
 }
 
-.master_bloc_section div h3 {
-    color: #0676d1;
-}
-
-.master_bloc_section div svg {
-    width: 50px;
-}
-
-.master_bloc_section div p {
+.splide__slide p {
     text-align: justify;
-    color: gray;
 }
-
 
 /**********************************article contentant les blocs témoignage****************************/
 article {
-    flex-basis: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 article h2,
 h4 {
     text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 article h4 {
@@ -318,6 +321,11 @@ article h4 {
 
 article h2 {
     font-size: 35px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 .article_bloc_temoignage {
@@ -352,9 +360,19 @@ article h2 {
     position: relative;
     bottom: 15px;
     left: 15px;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
-.article_bloc_temoignage div svg {
+.article_bloc_temoignage div ul li {
+    list-style-type: none;
+    display: inline-block
+}
+
+.article_bloc_temoignage div i {
     padding-left: 20px;
     cursor: pointer;
 }
@@ -362,7 +380,6 @@ article h2 {
 /**********************************footer/ pied de page**************************************/
 footer {
     margin-top: 50px;
-    flex-basis: 100%;
     padding: 20px;
     background-color: rgb(241, 224, 191);
     background-color: gainsboro;
@@ -371,12 +388,22 @@ footer {
 footer h4 {
     color: #0676d1;
     text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 
 }
 
 footer h2 {
     font-size: 35px;
     text-align: center;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 .footer_bloc {
@@ -393,6 +420,14 @@ footer h2 {
     flex-basis: 25%;
 }
 
+.footer_bloc div h3 {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
+}
+
 .footer_bloc a {
     text-decoration: none;
     color: black;
@@ -407,6 +442,11 @@ footer h2 {
 .footer_bloc div p {
     font-size: small;
     font-weight: bold;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 .footer_bloc .right_side {
@@ -418,9 +458,14 @@ footer h2 {
     font-size: small;
     color: white;
     font-weight: bold;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:750px) {
     .navigation {
         display: none;
     }
@@ -428,16 +473,20 @@ footer h2 {
     .open_menu {
         display: block;
     }
+
     header h1 {
         font-size: 70px;
     }
+
     main {
         margin-top: 30px;
         padding: 10px;
         margin-top: 0px;
+        flex-wrap: wrap;
     }
 
-    main div {
+    main .banière_service_contenu,
+    .banière_service_background {
         flex-basis: 90%;
         margin-top: 30px;
 
@@ -453,15 +502,6 @@ footer h2 {
         margin-top: 100px;
     }
 
-    .master_bloc_section {
-        width: 100%;
-        padding: 0px;
-        justify-content: center;
-    }
-
-    .master_bloc_section div {
-        flex-basis: 85%;
-    }
 
     .article_bloc_temoignage {
         justify-content: center
