@@ -14,7 +14,7 @@ html {
 /*****************en-tête et titre principal****************************/
 header {
     margin-bottom: 50px;
-    background: linear-gradient(to top , rgba(0, 0, 0, 0.5), #64a9e2), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), #64a9e2), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
@@ -162,6 +162,7 @@ header h1 {
     color: white;
 
 }
+
 header p {
     text-align: center;
     color: white;
@@ -210,7 +211,7 @@ header p {
     font-size: 30px;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
@@ -219,7 +220,7 @@ header p {
     font-size: 35px;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
@@ -233,8 +234,9 @@ main {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 10px;
-    
+
 }
+
 /**********************************************premier bloc après header**********************************/
 
 main div {
@@ -250,25 +252,28 @@ main div h3 {
     color: #0676d1;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
-    font-variation-settings: "wdth"500;
+    font-variation-settings: 500;
 }
-main div p{
+
+main div p {
     text-align: justify;
     font-weight: 100;
 }
-.mainColor{
+
+.mainColor {
     background-color: #0676d1;
     color: white;
 }
-.mainColor h3{
+
+.mainColor h3 {
     color: white;
 }
-main div:hover{
+
+main div:hover {
     background-color: gray;
     transition: 0.5s;
-    
     color: white;
 }
 
@@ -276,9 +281,15 @@ main div:hover{
 section {
     margin-top: 150px;
     margin-bottom: 100px;
-   background-color: #0676d1;
-   color: white;
+    background-color: #0676d1;
+    color: white;
     padding: 20px;
+    transition: 0.5s;
+}
+
+section:hover {
+    background-color: gray;
+    transition: 0.5s;
 }
 
 section h4,
@@ -287,10 +298,10 @@ h2 {
 }
 
 section h4 {
-    color: #0676d1;
+    color: white;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
@@ -299,7 +310,7 @@ section h2 {
     font-size: 35px;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
@@ -316,7 +327,7 @@ section h2 {
     text-align: center;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings:
         "wdth"500;
@@ -336,27 +347,27 @@ h4 {
     text-align: center;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
 
 article h4 {
     color: #0676d1;
-
-
 }
 
 article h2 {
     font-size: 35px;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
 
 .article_bloc_temoignage {
+    margin: auto;
+    width: 90%;
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -365,18 +376,16 @@ article h2 {
 }
 
 .article_bloc_temoignage div {
-    flex-basis: 25%;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 2px #1b8fee;
-    box-shadow: 0px 0px 2px gray;
-    background-color: whitesmoke;
+    flex-basis: 27%;
+    padding: 20px;
+    box-shadow: 2px 2px 15px gainsboro;
 }
 
 .article_bloc_temoignage_div_js {
     position: relative;
     bottom: 20px;
     transition: 0.5s;
+    background-color: whitesmoke;
 }
 
 .article_bloc_temoignage div img {
@@ -390,7 +399,7 @@ article h2 {
     left: 15px;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
@@ -403,13 +412,14 @@ article h2 {
 .article_bloc_temoignage div i {
     padding-left: 20px;
     cursor: pointer;
+    color: #0676d1;
 }
 
 /**********************************footer/ pied de page**************************************/
 footer {
     margin-top: 50px;
     padding: 20px;
-    background-color:#0676d1;
+    background-color: #0676d1;
     color: white;
 }
 
@@ -429,7 +439,7 @@ footer h2 {
     text-align: center;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
@@ -451,7 +461,7 @@ footer h2 {
 .footer_bloc div h3 {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
@@ -488,15 +498,20 @@ footer h2 {
     font-weight: bold;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
+
 @media screen and (max-width:1100px) {
-    main div{
+    main div {
         flex-basis: 40%;
     }
+    .article_bloc_temoignage div {
+        flex-basis: 24%;
+    }
 }
+
 @media screen and (max-width:750px) {
     .navigation ul {
         display: none;
@@ -505,12 +520,15 @@ footer h2 {
     .open_menu {
         display: block;
     }
+
     .socialMedias ul {
         padding-right: 10px;
     }
+
     .socialMedias ul li {
         padding-right: 20px;
     }
+
     header h1 {
         font-size: 50px;
     }
@@ -520,6 +538,7 @@ footer h2 {
         padding: 10px;
 
     }
+
     main div {
         flex-basis: 100%;
     }
@@ -534,7 +553,7 @@ footer h2 {
     }
 
     .article_bloc_temoignage div {
-        flex-basis: 70%;
+        flex-basis: 100%;
         margin: 20px;
     }
 
