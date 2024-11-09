@@ -18,6 +18,15 @@ header {
     background-position: center;
     background-size: cover;
     background-attachment: scroll;
+    transition: 0.5s;
+}
+
+header:hover {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #64a9e2), url("images/alexander-mils-lCPhGxs7pww-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    transition: 0.5s;
 }
 
 .navigation {
@@ -73,8 +82,8 @@ header {
 nav {
     position: fixed;
     height: 100%;
-    width: 300px;
-    left: -300px;
+    width: 100%;
+    left: -100%;
     background-color: #0676d1;
     z-index: 1;
     transition: ease-in-out 0.5s;
@@ -428,7 +437,7 @@ footer h4 {
     text-align: center;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings: "wdth"500;
 
@@ -507,6 +516,7 @@ footer h2 {
     main div {
         flex-basis: 40%;
     }
+
     .article_bloc_temoignage div {
         flex-basis: 24%;
     }
