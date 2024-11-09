@@ -13,23 +13,26 @@ html {
 
 /*****************en-tête et titre principal****************************/
 header {
-    padding: 5px;
     margin-bottom: 50px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #64a9e2), url("images/surface-S_YOuAUMm2o-unsplash.jpg");
+    background: linear-gradient(to top , rgba(0, 0, 0, 0.5), #64a9e2), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
+}
+
+.navigation {
+    background-color: #0676d1;
+    padding: 2px;
 }
 
 .navigation ul {
-    text-align: center;
     list-style-type: none;
 }
 
 .navigation ul li {
     list-style-type: none;
     display: inline-block;
-    padding: 10px;
+    padding: 7px 0px 7px 30px;
 }
 
 .navigation ul li a {
@@ -47,7 +50,6 @@ header {
 /*****************************************gestion du menu**********************************/
 
 .open_menu {
-    float: right;
     cursor: pointer;
     padding: 10px;
     transition: ease 0.5s;
@@ -120,23 +122,57 @@ nav ul li a:hover {
     transition: ease 0.5s;
 }
 
+/*****************************socialMedias***********************************************/
+.socialMedias {
+    background-color: white;
+    padding: 5px;
+}
+
+.socialMedias ul {
+    text-align: right;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.socialMedias ul li {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+.socialMedias ul li a {
+    text-decoration: none;
+    color: #0676d1;
+}
+
+.socialMedias ul li a i {
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.socialMedias ul li a i:hover {
+    padding: 5px;
+    background-color: #0676d1;
+    color: white;
+    transition: 0.5s;
+}
+
 header h1 {
     text-align: center;
-    font-size: 130px;
+    font-size: 100px;
     color: white;
 
 }
-
 header p {
     text-align: center;
     color: white;
     font-size: large;
+    word-wrap: break-word;
 }
 
 .header_links {
     text-align: center;
     list-style-type: none;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 
@@ -147,9 +183,11 @@ header p {
 
 .header_links li a {
     text-decoration: none;
-    color: white;
+    background-color: white;
     border: 1px solid white;
-    padding: 8px;
+    padding: 5px 10px 5px 10px;
+    color: inherit;
+    border-radius: 15px;
     transition: ease-in-out 0.5s;
 }
 
@@ -158,7 +196,6 @@ header p {
     letter-spacing: 2px;
     transition: ease-in-out 0.5s;
     color: #0676d1;
-    font-weight: bold;
 }
 
 /*****************************baniere misssion******************/
@@ -189,22 +226,27 @@ header p {
 
 /**********************************************premier bloc après header**********************************/
 main {
+    margin: auto;
+    width: 90%;
     margin-top: 50px;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 10px;
+    
+}
+/**********************************************premier bloc après header**********************************/
+
+main div {
+    flex-basis: 27%;
+    padding: 20px;
+    background-color: white;
+    margin-top: 30px;
+    box-shadow: 2px 2px 15px gainsboro;
+    transition: 0.5s;
 }
 
-main .banière_service_contenu,
-.banière_service_background {
-    flex-basis: 45%;
-}
-
-.banière_service_contenu {
-    padding: 10px;
-}
-
-.banière_service_contenu h3 {
+main div h3 {
     color: #0676d1;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
@@ -212,44 +254,30 @@ main .banière_service_contenu,
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
-
-.banière_service_contenu svg {
-    float: left;
+main div p{
+    text-align: justify;
+    font-weight: 100;
 }
-
-.banière_service_contenu p {
-    padding-left: 30px;
+.mainColor{
+    background-color: #0676d1;
+    color: white;
 }
-
-.banière_service_background {
-    border-radius: 20px;
-    box-sizing: content-box;
-
-    animation: animBckground alternate infinite 5s;
+.mainColor h3{
+    color: white;
 }
-
-@keyframes animBckground {
-    from {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/krakenimages-376KN_ISplE-unsplash.jpg");
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    to {
-        background: linear-gradient(rgba(0, 0, 0, 0.2), #64a9e2), url("images/alexander-mils-lCPhGxs7pww-unsplash.jpg");
-        background-position: center;
-        background-size: cover;
-        background-attachment: fixed;
-    }
+main div:hover{
+    background-color: gray;
+    transition: 0.5s;
+    
+    color: white;
 }
 
 /***************************************section***********************/
 section {
     margin-top: 150px;
     margin-bottom: 100px;
-    background-color: rgb(241, 224, 191);
-    background-color: gainsboro;
+   background-color: #0676d1;
+   color: white;
     padding: 20px;
 }
 
@@ -381,12 +409,12 @@ article h2 {
 footer {
     margin-top: 50px;
     padding: 20px;
-    background-color: rgb(241, 224, 191);
-    background-color: gainsboro;
+    background-color:#0676d1;
+    color: white;
 }
 
 footer h4 {
-    color: #0676d1;
+    color: white;
     text-align: center;
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
@@ -430,7 +458,7 @@ footer h2 {
 
 .footer_bloc a {
     text-decoration: none;
-    color: black;
+    color: white;
     transition: ease 0.5s;
 }
 
@@ -464,38 +492,36 @@ footer h2 {
     font-style: normal;
     font-variation-settings: "wdth"500;
 }
-
+@media screen and (max-width:1100px) {
+    main div{
+        flex-basis: 40%;
+    }
+}
 @media screen and (max-width:750px) {
-    .navigation {
+    .navigation ul {
         display: none;
     }
 
     .open_menu {
         display: block;
     }
-
+    .socialMedias ul {
+        padding-right: 10px;
+    }
+    .socialMedias ul li {
+        padding-right: 20px;
+    }
     header h1 {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     main {
         margin-top: 30px;
         padding: 10px;
-        margin-top: 0px;
-        flex-wrap: wrap;
-    }
-
-    main .banière_service_contenu,
-    .banière_service_background {
-        flex-basis: 90%;
-        margin-top: 30px;
 
     }
-
-    .banière_service_background {
-        height: 500px;
-        padding: 5px;
-        border-radius: 10px;
+    main div {
+        flex-basis: 100%;
     }
 
     section {
@@ -529,4 +555,11 @@ footer h2 {
     .footer_bloc .right_side {
         text-align: left;
     }
+}
+
+@media screen and (max-width:440px) {
+    .socialMedias ul li {
+        padding-right: 15px;
+    }
+
 }

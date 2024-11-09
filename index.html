@@ -26,7 +26,7 @@
     <!--menu et liens de navigation-->
     <header>
         <div class="navigation">
-            <ul>
+            <ul class="listNavigation">
                 <li><a href="#" class="link" title="Services">Services <i class="fa-brands fa-servicestack"></i></a>
                 </li>
                 <li><a href="#" class="link" title="Apropos">Apropos <i class="fa-solid fa-book"></i></a></li>
@@ -35,10 +35,10 @@
                 <li><a href="#Contact" class="link" title="Savoir plus">Savoir plus <i class="fa-solid fa-pen"></i></a>
                 </li>
             </ul>
+            <!-----------------menu mobile----------------->
+            <a class="open_menu" title="Cliquez pour accéder au menu "><i class="fa-solid fa-bars"
+                    style="color: white;"></i></a>
         </div>
-        <!-----------------menu mobile----------------->
-        <a class="open_menu" title="Cliquez pour accéder au menu "><i class="fa-solid fa-bars"
-                style="color: white;"></i></a>
         <nav>
             <a class="close_menu" title="Fermer le menu">X</a>
             <ul>
@@ -55,6 +55,17 @@
                 <li><a href="#Contact" class="link" title="Savoir plus">Savoir plus</a></li>
             </ul>
         </nav>
+        <!----------------------------réseaux sociaux liens---------------------->
+        <div class="socialMedias">
+            <ul>
+                <li><a href="tel:+243828588141"><i class="fa-solid fa-phone"></i> +243 828 588 141</a></li>
+                <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#"> <i class="fa-brands fa-square-twitter"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li> <a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li> <a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
         <!--titre entête-->
         <h1>Société des Finances</h1>
         <p>La meilleure Entreprise Pour La Gestion de Votre Finance et Votre Accompagnement</p>
@@ -63,19 +74,20 @@
             <li><a href="#temoignage" title="Savoir plus">Savoir plus</a></li>
         </ul>
     </header>
+    <!--------------------------------------------------------------------------------------->
     <div class="banière_titre_mission" id="demarer">
         <h4>Mission</h4>
         <h2>Pourquoi Nous ?</h2>
     </div>
     <main>
-        <div class="banière_service_contenu">
+        <div class="mainColor">
             <h3>Credit Immobilier</h3>
             <svg class="svg-icon"
                 style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
                 viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
-                    fill="#0676d1" />
+                    fill="white" />
             </svg>
             <p>Avez-vous trouvé un meuble dans notre magasin qui vous plaît beaucoup, mais vous n’avez pas de budget
                 disponible pour l’acheter ? Dans ce cas, demandez un crédit mobilier. <br> <br>
@@ -83,6 +95,8 @@
                 Veuillez noter que nous n’accordons ces crédits qu’aux clients domiciliés à Kinshasa. Pour plus
                 d’informations, vous pouvez joindre notre équipe par téléphone, par e-mail ou via le formulaire de
                 contact de notre site.</p>
+        </div>
+        <div>
             <h3> Compte d'Epargne</h3>
             <svg class="svg-icon"
                 style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
@@ -96,6 +110,23 @@
                 compte d’épargne est l’un des meilleurs moyens d’y parvenir. Que vous épargniez pour un acompte
                 sur une maison, des vacances de rêve, ou l’éducation de vos enfants, nous avons le plan idéal pour vous.
                 Vous pouvez être assurés que nous comprenons l’importance de l’épargne pour votre avenir financier.</p>
+        </div>
+        <div>
+            <h3>Virements et transfert bancaires</h3>
+            <svg class="svg-icon"
+                style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
+                    fill="#0676d1" />
+            </svg>
+            <p>Un virement bancaire permet de transférer des fonds par voie électronique entre deux parties.
+                Cette opération peut avoir lieu soit directement (entre deux comptes bancaires), soit d'une
+                personne à une autre à l'aide d'un service tiers non bancaire, comme MoneyGram ou Western
+                Union. Les virements bancaires sont un moyen rapide, fiable et sûr de transférer de l'argent
+                à l'échelle nationale et internationale.</p>
+        </div>
+        <div>
             <h3>Assurance Maladie</h3>
             <svg class="svg-icon"
                 style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
@@ -108,9 +139,9 @@
                 soins de santé est l’une des composantes les plus importantes de la sécurité sociale. La pandémie de
                 COVID-19 a une fois encore mis en lumière la nécessité d’un accès universel à des soins abordables. La
                 prestation de services de santé et leurs modes de financement ont de répercussions importantes sur les
-                personnes qui y accèdent et bénéficient d’une couverture santé. Si les systèmes nationaux d’assurance
-                maladie permettent un accès complet et équitable aux services de santé dans de nombreux pays, leur mise
-                en œuvre comporte plusieurs défis.</p>
+                per.</p>
+        </div>
+        <div>
             <h3>Gestion de Compte</h3>
             <svg class="svg-icon"
                 style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
@@ -123,9 +154,24 @@
                 sur votre stratégie de gestion des voyages en utilisant nos connaissances et notre compréhension des
                 défis spécifiques des secteurs humanitaire, missionnaire et des ONG.</p>
         </div>
-        <div class="banière_service_background">
-
+        <div>
+            <h3>Accompagnement academique et scolaire</h3>
+            <svg class="svg-icon"
+                style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
+                viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M512 0C230.4 0 0 230.4 0 512s230.4 512 512 512 512-230.4 512-512S793.6 0 512 0z m0 947.2c-240.64 0-435.2-194.56-435.2-435.2S271.36 76.8 512 76.8s435.2 194.56 435.2 435.2-194.56 435.2-435.2 435.2z m266.24-578.56c0 10.24-5.12 20.48-10.24 25.6l-286.72 286.72c-5.12 5.12-15.36 10.24-25.6 10.24s-20.48-5.12-25.6-10.24l-163.84-163.84c-15.36-5.12-20.48-15.36-20.48-25.6 0-20.48 15.36-40.96 40.96-40.96 10.24 5.12 20.48 10.24 25.6 15.36l138.24 138.24 261.12-261.12c5.12-5.12 15.36-10.24 25.6-10.24 20.48-5.12 40.96 15.36 40.96 35.84z"
+                    fill="#0676d1" />
+            </svg>
+            <p>L'accompagnement à la scolarité désigne les projets éducatifs, sportifs ou culturels qui, à
+                côté de l'école, offrent aux enfants
+                défavorisés des savoirs à travers des activités auxquelles ils
+                n'ont généralement pas accès.
+                Il se différencie en cela du soutien scolaire (individuel ou groupé) dispensé dans le cadre
+                de l'école en temps scolaire, ou des
+                cours de soutien donnés à titre onéreux.</p>
         </div>
+
     </main>
     <!----------------seection services------------------------>
     <section>
