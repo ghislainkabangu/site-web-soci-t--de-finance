@@ -5,6 +5,11 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 html {
@@ -169,6 +174,11 @@ header h1 {
     text-align: center;
     font-size: 100px;
     color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 
 }
 
@@ -177,6 +187,11 @@ header p {
     color: white;
     font-size: large;
     word-wrap: break-word;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth"500;
 }
 
 .header_links {
