@@ -294,11 +294,17 @@ main div p {
 .mainColor h3 {
     color: white;
 }
-
-main div:hover {
+.mainColor:hover{
     background-color: gray;
     transition: 0.5s;
     color: white;
+    position: relative;
+    bottom: 20px;
+}
+main div:hover {
+    background-color:gainsboro;
+    transition: 0.5s;
+   
 }
 
 /***************************************section***********************/
